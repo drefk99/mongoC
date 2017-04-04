@@ -1,0 +1,9 @@
+db.students.find({$and: [{pets:{$size:2}},{'pets.age':{$gt:1}}]}).pretty()
+db.students.find({$and: [{$and:[{colors:'black'},{colors:'red'}]},{$and:[{account:77},{account:9}]}]}).pretty()
+db.students.find({$and: [{'pets.age':1},{'pets.especie':'dog'}]}).pretty()
+
+db.students.find({'pets.age':{$gt: 1}},{'pets.name':true, _id:false}).pretty()
+
+db.students.find({$and:[{$or:[{colors:{$size:3}},{colors:{$size:4}}]},{'pets.age':{$lte:7}}]},{age:true, 'pets.name':true, 'pets.age':true}).pretty().sort({age:-1})
+
+db.students.find({$and:[{dir:{$ne:'/calle/'}},{'pets.age':{$gt:3}}]},{}).pretty()

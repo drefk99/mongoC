@@ -1,0 +1,20 @@
+
+1-  De los estudiantes que tenga dentro de sus cuentas una con valor a 3 que no tenga especie bird, obtener:
+	-Estudiantes: Nombre, edad y ultima cuenta.
+	-Mascotas: Nombre, edad y especie.
+  
+db.students.find({$and:[ {'pets.especie':{$ne: 'bird'}}, {account: 3} ]},{'pets.especie':true, 'pets.name': true, 'pets.age': true, account: {$slice: -1}, age:true, name:true, _id:false}).pretty()
+
+2- Los estudiantes que tengan perros y una cuenta mayor a tres, obetener:
+	-Estudiantes: Nombre, direccion, arreglo de cuentas.
+	-Mascota: Nombre, edad y especie.
+
+db.students.find({$and:[ {'pets.especie':{$eq: 'dog'}}, {account: {$gt: 500}} ]},{'pets.name': true, 'pets.age': true,'pets.especie': true, account: true, name:true, dir:true, _id:false}).pretty()
+
+3- De los estudiantes que les guste el color rojos (red) , que tengan gatos como su unica mascota, obtener:
+	-Estudiante: Nombre y Arreglo de colores.
+	-Mascota especie y edad.
+
+db.students.find({$and: [{$or: [{colors: 'red'}, {colors: 'rojo'}]}, {'pets.especie':'cat'}, {pets: {$size:1}}]}, {name:true, colors:true, 'pets.especie':true, 'pets.age':true, _id: false}).pretty()
+
+Nota: Todos sin _id.

@@ -1,0 +1,7 @@
+db.users.aggregate([{$project:{name:1,badges:1,points:1,_id:0}}, {$unwind:'$points'},{$unwind:'$badges'},{$group:{_id:'$name',sumpuntos:{$sum:'$points.bonus'}}},{$count:'sha'}])
+
+db.users.aggregate([{$project:{name:1,badges:1,points:1,_id:0}}, {$unwind:'$points'},{$unwind:'$badges'},{$group:{_id:'$name',sumpuntos:{$sum:'$points.bonus'}}},{$out:'sumus'}])
+
+db.users.aggregate([{$project:{name:1,badges:1,points:1,_id:0}}, {$unwind:'$points'},{$unwind:'$badges'},{$count:'shalala'}])
+
+db.users.aggregate([{$match:{type:1}},{$project:{name:1,favorites:1,points:1,_id:0}},{$unwind:'$points'},{$group:{_id:'$name', promPuntos:{$sum:'$points.points'}}}])
