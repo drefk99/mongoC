@@ -1,49 +1,58 @@
 db.users.insertMany(
   [
      {
-       _id: 1,
-       name: "sue",
+       _id: 7,
+       name: "karen",
        age: 19,
        type: 1,
        status: "P",
-       favorites: { artist: "Picasso", food: "pizza" },
+       favorites: { artist: "Giger", food: "blood" },
        finished: [ 17, 3 ],
-       badges: [ "blue", "black" ],
+       badges: [ "blue", "black", "blue", "gray", "yellow" ],
        points: [
           { points: 85, bonus: 20 },
-          { points: 85, bonus: 10 }
+          { points: 85, bonus: 10 },
+          { points: 30, bonus: 15 },
+          { points: 40, bonus: 10 },
+          { points: 70, bonus: 30 }
        ]
      },
      {
-       _id: 2,
-       name: "bob",
+       _id: 8,
+       name: "marley",
        age: 42,
        type: 1,
        status: "A",
-       favorites: { artist: "Miro", food: "meringue" },
+       favorites: { artist: "Bob Marley", food: "pork chop" },
        finished: [ 11, 25 ],
-       badges: [ "green" ],
+       badges: [ "green", "pink", "yellow", "purple", "gold" ],
        points: [
-          { points: 85, bonus: 20 },
-          { points: 64, bonus: 12 }
+          { points: 35, bonus: 20 },
+          { points: 20, bonus: 12 },
+          { points: 64, bonus: 13 },
+          { points: 70, bonus: 10 },
+          { points: 20, bonus: 0 }
        ]
      },
      {
-       _id: 3,
+       _id: 9,
        name: "ahn",
        age: 22,
        type: 2,
        status: "A",
-       favorites: { artist: "Cassatt", food: "cake" },
+       favorites: { artist: "Keenan Maynard", food: "french fries" },
        finished: [ 6 ],
-       badges: [ "blue", "red" ],
+       badges: [ "silver", "black", "blue", "green", "purple" ],
        points: [
           { points: 81, bonus: 8 },
+          { points: 55, bonus: 20 },
+          { points: 55, bonus: 20 },
+          { points: 55, bonus: 20 },
           { points: 55, bonus: 20 }
        ]
      },
      {
-       _id: 4,
+       _id: 10,
        name: "xi",
        age: 34,
        type: 2,
@@ -57,7 +66,7 @@ db.users.insertMany(
        ]
      },
      {
-       _id: 5,
+       _id: 11,
        name: "xyz",
        age: 23,
        type: 2,
@@ -70,7 +79,63 @@ db.users.insertMany(
        ]
      },
      {
-       _id: 6,
+       _id: 12,
+       name: "abc",
+       age: 43,
+       type: 1,
+       status: "A",
+       favorites: { food: "pizza", artist: "Picasso" },
+       finished: [ 18, 12 ],
+       badges: [ "black", "blue" ],
+       points: [
+          { points: 78, bonus: 8 },
+          { points: 57, bonus: 7 }
+       ]
+     },
+      {
+       _id: 13,
+       name: "abc",
+       age: 43,
+       type: 1,
+       status: "A",
+       favorites: { food: "pizza", artist: "Picasso" },
+       finished: [ 18, 12 ],
+       badges: [ "black", "blue" ],
+       points: [
+          { points: 78, bonus: 8 },
+          { points: 57, bonus: 7 }
+       ]
+     },
+     {
+       _id: 14,
+       name: "abc",
+       age: 43,
+       type: 1,
+       status: "A",
+       favorites: { food: "pizza", artist: "Picasso" },
+       finished: [ 18, 12 ],
+       badges: [ "black", "blue" ],
+       points: [
+          { points: 78, bonus: 8 },
+          { points: 57, bonus: 7 }
+       ]
+     },
+     {
+       _id: 15,
+       name: "abc",
+       age: 43,
+       type: 1,
+       status: "A",
+       favorites: { food: "pizza", artist: "Picasso" },
+       finished: [ 18, 12 ],
+       badges: [ "black", "blue" ],
+       points: [
+          { points: 78, bonus: 8 },
+          { points: 57, bonus: 7 }
+       ]
+     },
+     {
+       _id: 16,
        name: "abc",
        age: 43,
        type: 1,
