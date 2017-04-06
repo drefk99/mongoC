@@ -1,86 +1,174 @@
 db.users.insertMany(
   [
      {
-       _id: 1,
-       name: "sue",
+       _id: 7,
+       name: "karen",
        age: 19,
-       type: 1,
+       type: 3,
        status: "P",
-       favorites: { artist: "Picasso", food: "pizza" },
+       favorites: { artist: "Giger", food: "blood" },
        finished: [ 17, 3 ],
-       badges: [ "blue", "black" ],
+       badges: [ "blue", "black", "blue", "gray", "yellow" ],
        points: [
           { points: 85, bonus: 20 },
-          { points: 85, bonus: 10 }
+          { points: 85, bonus: 10 },
+          { points: 30, bonus: 15 },
+          { points: 40, bonus: 10 },
+          { points: 70, bonus: 30 }
        ]
      },
      {
-       _id: 2,
-       name: "bob",
+       _id: 8,
+       name: "marley",
        age: 42,
        type: 1,
        status: "A",
-       favorites: { artist: "Miro", food: "meringue" },
+       favorites: { artist: "Bob Marley", food: "pork chop" },
        finished: [ 11, 25 ],
-       badges: [ "green" ],
+       badges: [ "green", "pink", "yellow", "purple", "gold" ],
        points: [
-          { points: 85, bonus: 20 },
-          { points: 64, bonus: 12 }
+          { points: 35, bonus: 20 },
+          { points: 20, bonus: 12 },
+          { points: 64, bonus: 13 },
+          { points: 70, bonus: 10 },
+          { points: 20, bonus: 0 }
        ]
      },
      {
-       _id: 3,
-       name: "ahn",
+       _id: 9,
+       name: "Lilith",
        age: 22,
        type: 2,
        status: "A",
-       favorites: { artist: "Cassatt", food: "cake" },
+       favorites: { artist: "Keenan Maynard", food: "french fries" },
        finished: [ 6 ],
-       badges: [ "blue", "red" ],
+       badges: [ "silver", "black", "blue", "green", "purple" ],
        points: [
-          { points: 81, bonus: 8 },
-          { points: 55, bonus: 20 }
+          { points: 90, bonus: 20 },
+          { points: 90, bonus: 20 },
+          { points: 99, bonus: 0 },
+          { points: 98, bonus: 5 },
+          { points: 90, bonus: 20 }
        ]
      },
      {
-       _id: 4,
-       name: "xi",
+       _id: 10,
+       name: "Cassandra",
        age: 34,
-       type: 2,
+       type: 3,
        status: "D",
-       favorites: { artist: "Chagall", food: "chocolate" },
+       favorites: { artist: "Van gogh", food: "pasta" },
        finished: [ 5, 11 ],
-       badges: [ "red", "black" ],
+       badges: [ "red", "aqua", 'black', 'yellow', 'pink' ],
        points: [
           { points: 53, bonus: 15 },
-          { points: 51, bonus: 15 }
+          { points: 70, bonus: 40 },
+          { points: 51, bonus: 10 },
+          { points: 30, bonus: 10 },
+          { points: 50, bonus: 15 }
        ]
      },
      {
-       _id: 5,
-       name: "xyz",
+       _id: 11,
+       name: "Angelique",
        age: 23,
        type: 2,
        status: "D",
-       favorites: { artist: "Noguchi", food: "nougat" },
+       favorites: { artist: "Morbid Angel", food: "sneak meat" },
        finished: [ 14, 6 ],
-       badges: [ "orange" ],
+       badges: [ "orange", "yellow", "red", "purple", "withe", "black" ],
        points: [
-          { points: 71, bonus: 20 }
+          { points: 71, bonus: 20 },
+          { points: 71, bonus: 10 },
+          { points: 60, bonus: 0 },
+          { points: 65, bonus: 0 },
+          { points: 80, bonus: 0 }
        ]
      },
      {
-       _id: 6,
-       name: "abc",
+       _id: 12,
+       name: "Aiakos",
        age: 43,
        type: 1,
        status: "A",
-       favorites: { food: "pizza", artist: "Picasso" },
+       favorites: { food: "pasta", artist: "Hades" },
        finished: [ 18, 12 ],
-       badges: [ "black", "blue" ],
+       badges: [ "drak blue", "brown", "drak green", "pink", "dark red", "aqua" ],
        points: [
           { points: 78, bonus: 8 },
-          { points: 57, bonus: 7 }
+          { points: 57, bonus: 7 },
+          { points: 70, bonus: 7 },
+          { points: 60, bonus: 0 },
+          { points: 80, bonus: 3 }
+       ]
+     },
+     {
+       _id: 13,
+       name: "Mussolini",
+       age: 43,
+       type: 1,
+       status: "A",
+       favorites: { food: "pizza", artist: "Miguel Angel" },
+       finished: [ 18, 12 ],
+       badges: [ "black", "blue", "red", "yellow", "brown" ],
+       points: [
+          { points: 78, bonus: 8 },
+          { points: 97, bonus: 5 },
+          { points: 57, bonus: 10 },
+          { points: 87, bonus: 8 },
+          { points: 97, bonus: 7 }
+       ]
+     },
+     {
+       _id: 14,
+       name: "Fei Long",
+       age: 43,
+       type: 3,
+       status: "A",
+       favorites: { food: "Zongzi", artist: "Confusio" },
+       finished: [ 18,  ],
+       badges: [ "black", "blue", "gold", "champagne", "silver" ],
+       points: [
+          { points: 78, bonus: 8 },
+          { points: 57, bonus: 7 },
+          { points: 80, bonus: 10 },
+          { points: 90, bonus: 5 },
+          { points: 100, bonus: 5 }
+       ]
+     },
+     {
+       _id: 15,
+       name: "Chun li",
+       age: 43,
+       type: 1,
+       status: "P",
+       favorites: { food: "Takoyaki", artist: "Akira Yamaoka" },
+       finished: [ 3, 7 ],
+       badges: [ "yellow", "gold", "silver", "withe", "geen" ],
+       points: [
+          { points: 78, bonus: 8 },
+          { points: 70, bonus: 10 },
+          { points: 80, bonus: 10 },
+          { points: 81, bonus: 15 },
+          { points: 89, bonus: 20 },
+          { points: 60, bonus: 0 }
+       ]
+     },
+     {
+       _id: 16,
+       name: "Kublai ",
+       age: 43,
+       type: 1,
+       status: "D",
+       favorites: { food: "Zongzi", artist: "Genghis" },
+       finished: [ 10, 6 ],
+       badges: [ "black", "blue", "grey", "black", "gold", "green" ],
+       points: [
+          { points: 78, bonus: 8 },
+          { points: 90, bonus: 23 },
+          { points: 80, bonus: 5 },
+          { points: 70, bonus: 5 },
+          { points: 60, bonus: 5 }
        ]
      }
   ]
