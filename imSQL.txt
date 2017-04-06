@@ -1,0 +1,24 @@
+
+create table favi (id int NOT NULL AUTO_INCREMENT PRIMARY KEY, artis varchar(84), food varchar(84));
+
+
+LOAD DATA LOCAL INFILE '/home/administradorcito/Documentos/mongo/favi.csv' into table favi fields terminated by ',' lines terminated by '\n' ignore 1 lines (id, artis, food);
+
+create table points2 (user_id int,  points  int, bonus int);
+
+LOAD DATA LOCAL INFILE '/home/administradorcito/Documentos/mongo/pointB.csv' into table points2 fields terminated by ',' lines terminated by '\n' ignore 1 lines (id, user_id, points, bonus);
+
+
+
+create table users2 (name  varchar(80), age int, type varchar(3), status varchar(3), finished varchar(20), badges varchar(100), id int primary key not null auto_increment);
+
+LOAD DATA LOCAL INFILE '/home/administradorcito/Documentos/mongo/usersP.csv' INTO TABLE users2 FIELDS TERMINATED BY ','  ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 LINES(name, age, type, status, finished, badges, id)
+
+alter table favi add foreign key (id) references users2(id);
+
+alter table points3 add foreign key (user_id) references users2(id);
+
+select * from users2, points3, favi where users2.id=points3.user_id and users2.id=favi.id\G
+
+select * from users2, points3, favi where users2.id=points3.user_id and users2.id=favi.id and users2.name='kublai'\G
+

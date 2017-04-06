@@ -1,0 +1,12 @@
+{"_id":{"$oid":"58e2b8c3cf8f704c4ee0d11a"},"name":"bob","age":22.0,"status":"Z"}
+{"_id":{"$oid":"58e2b91bcf8f704c4ee0d11b"},"name":"dante","age":34.0,"status":"X"}
+{"_id":{"$oid":"58e2b97ecf8f704c4ee0d11c"},"name":"Dragunov","age":16.0,"status":"Y"}
+{"_id":{"$oid":"58e2bf3ecf8f704c4ee0d11d"},"name":"Ivanka","age":25.0,"status":"Z"}
+{"_id":{"$oid":"58e2bf4ccf8f704c4ee0d11e"},"name":"Tolomir","age":40.0,"status":"Z"}
+{"_id":{"$oid":"58e2bfc7cf8f704c4ee0d11f"},"name":"Legolas","age":22.0,"status":"Z"}
+{"_id":1.0,"name":"sue","age":19.0,"type":1.0,"status":"P","favorites":{"artist":"Picasso","food":"pizza"},"finished":[17.0,3.0],"badges":["blue","black"],"points":[{"points":85.0,"bonus":20.0},{"points":85.0,"bonus":10.0}]}
+{"_id":2.0,"name":"bob","age":42.0,"type":1.0,"status":"A","favorites":{"artist":"Miro","food":"meringue"},"finished":[11.0,25.0],"badges":["green"],"points":[{"points":85.0,"bonus":20.0},{"points":64.0,"bonus":12.0}]}
+{"_id":3.0,"name":"ahn","age":22.0,"type":2.0,"status":"A","favorites":{"artist":"Cassatt","food":"cake"},"finished":[6.0],"badges":["blue","red"],"points":[{"points":81.0,"bonus":8.0},{"points":55.0,"bonus":20.0}]}
+{"_id":4.0,"name":"xi","age":34.0,"type":2.0,"status":"D","favorites":{"artist":"Chagall","food":"chocolate"},"finished":[5.0,11.0],"badges":["red","black"],"points":[{"points":53.0,"bonus":15.0},{"points":51.0,"bonus":15.0}]}
+{"_id":5.0,"name":"xyz","age":23.0,"type":2.0,"status":"D","favorites":{"artist":"Noguchi","food":"nougat"},"finished":[14.0,6.0],"badges":["orange"],"points":[{"points":71.0,"bonus":20.0}]}
+{"_id":6.0,"name":"abc","age":43.0,"type":1.0,"status":"A","favorites":{"food":"pizza","artist":"Picasso"},"finished":[18.0,12.0],"badges":["black","blue"],"points":[{"points":78.0,"bonus":8.0},{"points":57.0,"bonus":7.0}]}

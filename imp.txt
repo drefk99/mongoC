@@ -1,0 +1,2 @@
+ LOAD DATA LOCAL INFILE '/home/administradorcito/Documentos/mongo/pointB.csv' into table points3 fields terminated by ',' lines terminated by '\n' ignore 1 lines (user_id, points, bonus, id);
+

@@ -1,0 +1,4 @@
+Obteners de users de status A el nombre, el promedio de los usuarios en el apartado points y enviarlos a otra coleccion llamada 'calif'
+
+db.users.aggregate([{$match:{status:'A'}},{$project: {name:1,_id:1, points:1}},{$unwind:'$points'}, {$group:{_id:'$name', prompunt:{$avg:'$points.points'}}},{$out:'calif'}])
+
